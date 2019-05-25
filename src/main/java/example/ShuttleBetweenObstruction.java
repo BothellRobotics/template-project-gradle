@@ -42,8 +42,9 @@ public class ShuttleBetweenObstruction {
 	        
 	        Delay.msDelay(500);
 		}
+		
 		boolean moveForward = true;
-		for(int i = 0; i < 50; i++) {
+		for(int i = 0; i < 10; i++) {
 			LOGGER.info("Interation: {}", i);
 			while(moveForward) {				
 				sample = new float[sp.sampleSize()];
@@ -77,7 +78,7 @@ public class ShuttleBetweenObstruction {
 	        LOGGER.info("Make U-Turn");
 	        motorLeft.forward();
 	        motorRight.backward();
-	        Delay.msDelay(2500);
+	        Delay.msDelay(1700);
 	        moveForward = true;
 		}
 		
